@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
 
+## Pre-requisties
+1. Initialize the node module after cloning the project with `npm install`
+2. Add NgRxStore to the project with `ng add @ngrx/store@latest`
+3. Add angular material to the project with `ng add @angular/material`
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
