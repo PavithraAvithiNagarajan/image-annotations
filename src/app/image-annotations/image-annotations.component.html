@@ -1,0 +1,25 @@
+<!-- Loading Spinner until http service call is done  -->
+<div class="loader-overlay" *ngIf="loading$ | async">
+    <mat-progress-spinner class="white-spinner" mode="indeterminate"></mat-progress-spinner>
+</div>
+ <!-- HTML Image Annotation Block -->
+<h2>Image Annotation</h2>
+<div class="center">
+    <div class="errorContainer" *ngIf="errorMessage"> `{{errorMessage}}"Please try Again Later"`</div>
+    <div class="container">
+        <canvas id="canvas" #canvas></canvas>
+        <div class="button">
+            <button mat-raised-button *ngIf="!errorMessage" (click)="drawAnnotationImage()">Draw Annotation</button>
+        </div>
+    </div>
+</div>
+
+ 
+
+
+
+
+
+
+
+

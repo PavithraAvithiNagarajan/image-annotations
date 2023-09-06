@@ -1,0 +1,88 @@
+body {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+h2 {
+  color: black;
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container,
+canvas {
+  width: 512px;
+  height: 512px;
+}
+
+#canvas {
+  position: relative;
+  background-color: black;
+}
+
+button {
+  position: relative;
+  background-color: white;
+  width: 200px;
+  height: 40px;
+  top: 20px;
+}
+
+.button {
+  text-align: center;
+}
+
+mat-progress-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.errorContainer {
+  text-align: center;
+  color: red;
+}
+
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  z-index: 9997;
+}
+
+/* On Smaller Device i have reduced the fixed 
+Hope that should be fine */
+@media (max-width: 480px) {
+  h2 {
+    font-size: 15px;
+  }
+
+  .container,
+  canvas {
+    width: 320px;
+    height: 320px;
+    text-align: center;
+  }
+
+  button {
+    width: 70%;
+    height: auto;
+  }
+}
